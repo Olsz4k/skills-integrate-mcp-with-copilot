@@ -13,6 +13,23 @@
     </header>
 
     <main>
+      <div id="activities-toolbar" style="margin-bottom: 20px;">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search activities..."
+          style="padding: 8px; width: 180px; margin-right: 10px;"
+        />
+        <select id="sort-select" style="padding: 8px; margin-right: 10px;">
+          <option value="name">Sort by Name</option>
+          <option value="spots">Sort by Availability</option>
+        </select>
+        <!-- Category filter will be hidden for now, as no category in backend yet -->
+        <!-- <select id="category-select" style="padding: 8px;">
+          <option value="">All Categories</option>
+        </select> -->
+      </div>
+
       <section id="activities-container">
         <h3>Available Activities</h3>
         <div id="activities-list">
@@ -26,7 +43,12 @@
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>
-            <input type="email" id="email" required placeholder="your-email@mergington.edu" />
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="your-email@mergington.edu"
+            />
           </div>
           <div class="form-group">
             <label for="activity">Select Activity:</label>
